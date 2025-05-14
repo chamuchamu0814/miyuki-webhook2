@@ -3,9 +3,12 @@
   "functions": {
     "api/**/*.js": {
       "runtime": "nodejs18.x",
-      "includeFiles": "api/node_modules/**"
+      "includeFiles": ["api/node_modules/**"]
     }
   },
+  "builds": [
+    { "src": "api/**/*.js", "use": "@vercel/node" }
+  ],
   "routes": [
     {
       "src": "/api/(.*)",
