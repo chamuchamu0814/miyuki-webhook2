@@ -3,9 +3,7 @@
   "functions": {
     "api/**/*.js": {
       "runtime": "nodejs18.x",
-      "includeFiles": [
-        "api/node_modules/**"
-      ]
+      "includeFiles": "api/node_modules/**"
     }
   },
   "routes": [
