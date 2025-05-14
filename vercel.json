@@ -6,7 +6,6 @@
       "includeFiles": "api/node_modules/**"
     }
   },
-  "builds": [],
   "routes": [
     {
       "src": "/api/(.*)",
