@@ -1,12 +1,15 @@
 {
-  "cron": [
+  "version": 2,
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "builds": [],
+  "routes": [
     {
-      "path": "/api/reminder",
-      "schedule": "0 23 * * *"
-    },
-    {
-      "path": "/api/reminder",
-      "schedule": "0 11 * * *"
+      "src": "/api/(.*)",
+      "dest": "/api/$1.js"
     }
   ]
 }
